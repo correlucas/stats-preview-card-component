@@ -1,0 +1,9 @@
+:root {
+  /* primary */
+  --p-purple: hsla(276, 60%, 61%, 1);
+  --p-white: hsla(180, 100%, 100%, 1);
+
+  --n-dk-purple: hsla(246, 38%, 16%, 1);
+  --n-gray: hsla(243, 10%, 53%, 1);
+  --n-bg: hsla(233, 46%, 7%, 1);
+}
