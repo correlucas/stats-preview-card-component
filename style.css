@@ -1,9 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lexend+Deca&display=swap');
+
 :root {
   /* primary */
   --p-purple: hsla(276, 60%, 61%, 1);
   --p-white: hsla(180, 100%, 100%, 1);
 
   --n-dk-purple: hsla(246, 38%, 16%, 1);
-  --n-gray: hsla(243, 10%, 53%, 1);
+  --n-gray: rgb(159, 158, 182);
   --n-bg: hsla(233, 46%, 7%, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  line-height: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--n-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  border-radius: 14px;
+  justify-items: end;
+  width: 1115px;
+  background-color: var(--n-dk-purple);
+}
+
+.hero-img img {
+  height: 100%;
+  width: auto;
+  border-radius: 0 14px 14px 0;
+}
+
+.hero-text {
+  padding: 70px 124px 70px 70px;
+}
+
+.hero-text h1,
+.highlights h2 {
+  color: var(--p-white);
+}
+
+.hero-text h1 {
+  font-size: 2.125rem;
+  padding-bottom: 32px;
+}
+
+.hero-text span {
+  color: var(--p-purple);
+}
+
+.hero-text p,
+.highlights p {
+  font-weight: 500;
+  color: var(--n-gray);
+}
+
+.hero-text p {
+  font-size: 0.95rem;
+}
+
+.hero-text>p {
+  line-height: 1.75;
+  padding-bottom: 80px;
+}
+
+.highlights h2 {
+  font-size: 1.4rem;
+  padding-bottom: 8px;
+}
+
+.all-caps {
+  text-transform: uppercase;
+}
+
+.highlights {
+  display: flex;
+  gap: 52px;
+}
+
+.highlights p {
+  font-family: 'Lexend Deca', sans-serif;
 }
