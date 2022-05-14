@@ -40,10 +40,18 @@ body {
   background-color: var(--n-dk-purple);
 }
 
+
 .hero-img img {
   height: 100%;
   width: auto;
+  mix-blend-mode: multiply;
+  opacity: 0.80;
   border-radius: 0 14px 14px 0;
+}
+
+.hero-img {
+  border-radius: 0 14px 14px 0;
+  background-color: var(--p-purple);
 }
 
 .hero-text {
