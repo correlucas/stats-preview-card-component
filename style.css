@@ -74,20 +74,19 @@ body {
 }
 
 .hero-text span {
-  background: linear-gradient(93.01deg, #AF5EC3 -6.55%, #ED4DCA 114.88%);
+  background-image: linear-gradient(to right, #AF5EC3, #ef45b4, #fa747d, #f7a0cf, #ef45b4, #AF5EC3);
+  background-size: 300% auto;
+  font-size: 2.125rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: var(--p-purple);
-  transition: ease-in-out 0.5s;
-  animation-duration: 0.3s;
+  animation: move 5s linear infinite;
+  animation-delay: 5s;
 }
 
-.hero-text span:hover {
-  background: linear-gradient(93.01deg, #5BD0F4 -6.55%, #2CEF28 114.88%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: ease-in-out 0.5s;
-  animation-duration: 0.3s;
+@keyframes move {
+  to {
+    background-position: 300% center;
+  }
 }
 
 
