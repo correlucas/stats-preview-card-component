@@ -24,7 +24,7 @@ img {
 }
 
 main {
-  margin: 40px;
+  margin: 44px;
 }
 
 body {
@@ -57,6 +57,7 @@ body {
   opacity: 0.80;
   border-radius: 0 0.875rem 0.875rem 0;
 }
+
 
 .hero-img {
   border-radius: 0 0.875rem 0.875rem 0;
@@ -116,8 +117,8 @@ body {
   padding-bottom: 0.5rem;
 }
 
-.highlights P {
-  font-size: 0.8125rem;
+.highlights p {
+  font-size: 0.8rem;
 }
 
 .all-caps {
@@ -131,11 +132,18 @@ body {
 
 .highlights p {
   font-family: 'Lexend Deca', sans-serif;
+  letter-spacing: 1.4px;
 }
 
 @media (max-width: 1000px) {
+  .hero-img img {
+    margin: 0;
+  }
+
+
   .container {
-    width: 800px;
+    max-width: 700px;
+    justify-items: end;
   }
 
   .hero-text {
@@ -151,6 +159,10 @@ body {
 
 
 @media (max-width: 700px) {
+  main {
+    margin: 24px;
+  }
+
   .container {
     grid-template-columns: 1fr;
     width: 100%;
@@ -164,11 +176,11 @@ body {
 
   .container h1,
   .hero-text span {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
   }
 
   .hero-text {
-    padding: 2.625rem 1rem 2.625rem 1rem;
+    padding: 42px 32px;
   }
 
   .hero-text h1 {
@@ -176,8 +188,7 @@ body {
   }
 
   .hero-text>p {
-    font-size: 1rem;
-    margin: 0px 8px;
+    font-size: 0.9rem;
     padding-bottom: 2rem;
   }
 
