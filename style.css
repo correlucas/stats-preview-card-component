@@ -15,6 +15,7 @@
   padding: 0;
   text-decoration: 0;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 /* Make images easier to work with */
@@ -109,6 +110,24 @@ h1 {
   }
 }
 
+.highlights h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+  background-image: linear-gradient(to right, #AF5EC3, #ef45b4, #fa747d, #f7a0cf, #ef45b4, #AF5EC3);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: move 5s linear infinite;
+  animation-delay: 5s;
+}
+
+@keyframes move {
+  to {
+    background-position: 300% center;
+  }
+}
+
 .hero-text p,
 .highlights p {
   font-weight: 500;
@@ -123,10 +142,6 @@ h1 {
   line-height: 1.75;
 }
 
-.highlights h2 {
-  font-size: 1.4rem;
-  padding-bottom: 0.5rem;
-}
 
 .highlights p {
   font-size: 0.8rem;
@@ -216,4 +231,29 @@ h1 {
     border-radius: 0.875rem 0.875rem 0 0;
   }
 
+}
+
+
+h1,
+.highlights,
+p,
+main {
+  -webkit-animation: slideIn 1s ease-in;
+  animation: slideIn 1s ease-out;
+}
+
+/* intro animation */
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
