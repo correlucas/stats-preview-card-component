@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/stats-preview-card-comp-pure-css-custom-colors-and-gradient-text-I2kqEpQIPj)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/stats-preview-card-vanilla-css-custom-design-text-animation-RfGBFlMpwK)
 - Live Site URL: [Live Site at Vercel](https://stats-preview-card-component-wheat-delta.vercel.app/)
 ## My process
 
